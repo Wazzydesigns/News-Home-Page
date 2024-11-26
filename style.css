@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    font-size: 15px;
+    width: 1060px;
+    margin: 48px auto;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    max-width: 50px;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-icon{
+    display: none;
+}
+
+nav p:hover,
+nav p:active{
+    color: hsl(5, 85%, 63%);
+}
+
+
+section img{
+    max-width: 96%;
+}
+
+.mobile-img{
+    display: none;
+}
+
+.container-main{
+    display: flex;
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+.caption-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.caption-para-btn{
+    display: flex;
+    justify-content: space-between;
+    max-width: 95%;
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 95%;
+    color:  hsl(240, 100%, 5%);
+}
+
+p{
+    color: hsl(236, 13%, 42%);
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+button{
+   background-color: hsl(5, 85%, 63%);
+   padding: 10px 20px;
+   border: none;
+   margin-top: 25px;
+   color: hsl(240, 100%, 5%);
+   font-weight: 800;
+   letter-spacing: 5px;
+   cursor: pointer;
+}
+
+button:hover,
+button:active{
+     color: hsl(36, 100%, 99%);
+     background-color: hsl(240, 100%, 5%);
+}
+
+.New-right{
+    padding: 25px 15px 0px 15px;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+
+h2{
+    font-size: 34px;
+    color: hsl(35, 77%, 62%);
+}
+
+h3{
+    font-size: 22px;
+    color: hsl(5, 85%, 63%);
+}
+
+h4{
+    margin-top: 25px;
+    font-size: 19px;
+}
+
+.bold-para{
+    font-size: 15px;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+    margin: 10px 0;
+}
+
+.bold-para:hover,
+.bold-para:active{
+      color:  hsl(5, 85%, 63%);
+      cursor: pointer;
+}
+
+.bottom-line{
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+}
+
+
+.bottom-line h4:hover,
+.bottom-line h4:active,
+.special-h:hover,
+.special-h:active{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.bottom-line p{
+    margin-bottom: 25px;
+    padding-top: 7px;
+}
+
+.para-spacial{
+    padding-top: 7px;
+}
+
+.last-section,
+.last-containers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 104%;
+}
+
+.last-containers{
+    margin-top: 0;
+}
+
+.last-containers img{
+   max-width: 25%;
+}
+
+.last-section-texts{
+    padding: 0 20px;
+}
+
+/* for mobile */
+
+@media screen and (max-width:767px) {
+    body{
+        margin: 28px auto;
+        padding: 0 22px;
+        width: 100vw;
+        /* align-items: center; */
+        /* height: fit-content; */
+    }
+    header{
+        width: 100%;
+        text-align: center;
+    }
+    header img{
+        max-width: 30px;
+    }
+    nav{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .container-main{
+        display: block;
+        margin-top: 28px;
+    }
+    section img{
+        display: none;
+    }
+    
+    .mobile-img{
+        display: block;
+        max-width: 100%;
+    }
+    .caption-container{
+        display: block;
+    }
+    .caption-para-btn{
+        display: block;
+        max-width: 100%;
+    }
+    h1{
+        font-size: 42px;
+    }
+    
+    p{
+      margin-top: 12px;
+      line-height: 25px;
+    }
+    .bottom-line p{
+        margin-bottom: 25px;
+        padding-top: 0;
+    }
+    button{
+        padding: 12px 22px;
+        margin-top: 18px;
+        font-size: 12px;
+     }
+     .New-right{
+        padding: 20px 15px;
+        margin-top: 48px;
+    }
+    
+    h2{
+        font-size: 28px;
+    }
+    
+    h4{
+        margin-top: 20px;
+        font-size: 17px;
+    }
+    .last-section{
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    .last-containers img{
+        display: block;
+        max-width: 25%;
+     }
+     .last-containers{
+        margin-bottom: 25px;
+    }
+}
